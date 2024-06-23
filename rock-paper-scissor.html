@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+  <p>Rock-Paper-Scissor</p>
+  <button onclick="
+    computer = Math.floor(Math.random() * 3 ) + 1;
+    if(computer==1) alert('it\'s a tie')
+    else if(computer==2) alert('You Lose, Computer won (paper)')
+    else alert('You won, Computer lose(scissor)')
+    ">Rock</button>
+  <button onclick="
+    computer = Math.floor(Math.random() * 3 ) + 1;
+    if(computer==1) alert('You won, Computer lose(rock)')
+    else if(computer==2) alert('it\'s a tie')
+    else alert('You Lose, Computer won (scissor)')">Paper</button>
+  <button onclick="
+    computer = Math.floor(Math.random() * 3 ) + 1;
+    if(computer==1) alert('You Lose, Computer won (rock)')
+    else if(computer==2) alert('You won, Computer lose(paper)')
+    else alert('it\'s a tie')">Scissor</button>
+  <script>
+    let computer= 0, rock=1, paper=2, scissor=3
+  </script>
+</body>
+</html>
