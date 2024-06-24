@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>head-tail</title>
+</head>
+<body>
+  <p>Make a gues</p>
+  <button onclick="
+    num = Math.random()
+    if(num < 0.5) guess = 'head' 
+    else guess = 'tail'
+    if(guess === 'head') document.body.append('You won!')
+    else document.body.append('You lose!')">head</button>
+  <button onclick="
+    num = Math.random()
+    if(num < 0.5) guess = 'head' 
+    else guess = 'tail'
+    if(guess === 'tail') document.body.append('You won!')
+    else document.body.append( 'You lose!')">tail</button>
+  <script>
+    let guess='', num = 0
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+<body>
+  <p>Cart Quantity</p>
+  <button class = "show" onclick="console.log(`Cart Quantity: ${cart}`)">Show Quantity</button>
+
+  <button onclick="console.log(`Cart Quantity: ${++cart}`)">Add to Cart</button>
+  
+  <button onclick="console.log(`Cart Quantity: ${cart+=2}`)">+2</button> 
+  
+  <button onclick="console.log(`Cart Quantity: ${cart+=3}`)">+3</button> 
+  
+  <button onclick="console.log(`Cart Quantity: ${cart+=4}`)">+4</button> 
+  
+  <button onclick="console.log(`Cart Quantity: ${cart+=5}`)">+5</button> 
+
+  <br><br>
+
+  <button onclick="
+    if(cart > 0 ) console.log(`Cart Quantity: ${--cart}`)
+    else console.log('Cart is empty!')">Remove from Cart</button> 
+
+  <button onclick="
+    if(cart > 1)console.log(`Cart Quantity: ${cart-=2}`)
+    else console.log('Cart is empty!')">-2</button> 
+
+  <button onclick="
+    if(cart > 2) console.log(`Cart Quantity: ${cart-=3}`)
+    else console.log('Cart is empty!')">-3</button> 
+
+  <button onclick="
+    console.log(`Cart is Reset`); cart=0">Reset Cart</button>
+
+  <script>
+    let cart = 0
+  </script>  
+</body>
+</html>
